@@ -33,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
         EditText textInput2 = findViewById(R.id.TextInput2);
         TextView resultMessage = findViewById(R.id.addedResult);
 
+        Button reset = findViewById(R.id.clearResult);
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -43,6 +45,20 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        reset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                clearValues(textInput, textInput2);
+                resultMessage.setText(getString(R.string.result));
+            }
+        });
+
+    }
+
+    private void clearValues(EditText textInput, EditText textInput2) {
+        textInput.getText().clear();
+        textInput2.getText().clear();
+        result = 0;
     }
 
     private int addValues(EditText textInput, EditText textInput2) {

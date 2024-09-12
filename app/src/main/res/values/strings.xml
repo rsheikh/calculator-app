@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">Calculator App</string>
     <string name="welcome_to_calculator_app">Welcome to Calculator App</string>
-    <string name="value_1">Enter Value 1</string>
-    <string name="value_2">Enter Value 2</string>
+    <string name="value_1">" "</string>
+    <string name="value_2">" "</string>
     <string name="buttonCalculate">=</string>
     <string name="result">Result</string>
+    <string name="clear">CLEAR</string>
 </resources>
